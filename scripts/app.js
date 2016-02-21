@@ -11,4 +11,4 @@ function getAmount() {
     $('#total-amount').text((pre_tax+tn_tax+surcharge).toFixed(2))
 }
 
-$('#pre-tax-total').change(getAmount)
+$('#pre-tax-total').keydown(getAmount)
