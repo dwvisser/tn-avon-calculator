@@ -2,19 +2,24 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Avon TN Tax Calculator</title>
+    <title>Tax Calculator</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div data-role="page">
         <div data-role="header">
-            <h1>Avon TN Tax Calculator</h1>
+            <h1>Tax Calculator</h1>
         </div>
         <div role="main" class="ui-content">
             <div>
                 <label for="pre-tax-total">Pre-tax total:</label>
                 <input type="text" id="pre-tax-total" />
+                <input type="submit" id="calculate" value="Calculate">
+            </div>
+            <div class="amount">
+                <div>Subtotal</div>
+                <div id="subtotal"></div>
             </div>
             <div class="tn-tax">
                 <div>TN Sales Tax (9.75%)</div>
